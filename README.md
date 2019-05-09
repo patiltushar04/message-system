@@ -1,11 +1,11 @@
 # message-system
 
 Application uses:
--Embedded Tomcat
--Embedded H2
--In-memory ActiveMQ
--Lombok
--For DB migration Flyway
+>>>Embedded Tomcat
+>>>Embedded H2
+>>>In-memory ActiveMQ
+>>>Lombok
+>>>Flyway
 
 
 >>>Use case 1#Send message
