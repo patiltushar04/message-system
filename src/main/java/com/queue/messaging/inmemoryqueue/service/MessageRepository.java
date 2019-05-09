@@ -13,4 +13,5 @@ public interface MessageRepository extends CrudRepository<Message,String> {
 
     public List<Message> findByReceiver(String receiver);
     public List<Message> findBySender(String receiver);
+    public Message findById(Long id);
 }

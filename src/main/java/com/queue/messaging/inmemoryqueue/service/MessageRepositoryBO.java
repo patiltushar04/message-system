@@ -33,6 +33,14 @@ public class MessageRepositoryBO {
         return copySourceToDest(messages);
     }
 
+    public MessageTemplate retrieveMessageDetails(Long id){
+        Message message=messageRepository.findById(id);
+        MessageTemplate messageTemplate=new MessageTemplate();
+        BeanUtils.copyProperties(message,messageTemplate);
+        return messageTemplate;
+    }
+
+
     public List<MessageTemplate> copySourceToDest(List<Message> messages){
         List<MessageTemplate> messageTemplate=new ArrayList<MessageTemplate>();
         messageTemplate=messages.stream().map(m->{

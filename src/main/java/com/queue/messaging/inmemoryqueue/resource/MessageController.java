@@ -38,4 +38,9 @@ public class MessageController {
     public List<MessageTemplate> messagesSent(@PathVariable String senderName){
         return messageRepositoryBO.retrieveSentMessages(senderName);
     }
+
+    @GetMapping("/details/{id}")
+    public MessageTemplate messageDetails(@PathVariable Long id){
+        return messageRepositoryBO.retrieveMessageDetails(id);
+    }
 }

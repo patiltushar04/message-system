@@ -50,3 +50,17 @@ Application uses:
                "body": "Looking forward to work with you"
          }
     ]
+
+>>>Use case 4#Get message details by identified
+    Request:
+    GET http://localhost:8081/message/details/1
+
+    Response:
+    [
+         {
+               "sender": "Tushar",
+               "receiver": "Patil",
+               "subject": "Hi There",
+               "body": "Looking forward to work with you"
+         }
+    ]
