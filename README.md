@@ -26,6 +26,7 @@ Application uses:
 >>>Use case 2#list incoming messages for a user
    Request:
    GET http://localhost:8081/message/read/Patil
+
    Response:
     [
          {
@@ -39,6 +40,7 @@ Application uses:
 >>>Use case 3#list sent messages by a user
     Request:
     GET http://localhost:8081/message/sent/Tushar
+
     Response:
     [
          {
