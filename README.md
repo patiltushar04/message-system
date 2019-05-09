@@ -5,6 +5,7 @@ Application uses:
 -Embedded H2
 -In-memory ActiveMQ
 -Lombok
+-For DB migration Flyway
 
 
 >>>Use case 1#Send message
@@ -22,28 +23,28 @@ Application uses:
     Response:
     Message sent successfully
 
->>>>Use case 2#list incoming messages for a user
+>>>Use case 2#list incoming messages for a user
    Request:
    GET http://localhost:8081/message/read/Patil
    Response:
-       [
+    [
          {
            "sender": "Tushar",
            "receiver": "Patil",
            "subject": "Hi There",
            "body": "Looking forward to work with you"
          }
-       ]
+    ]
 
->>>>Use case 3#list sent messages by a user
+>>>Use case 3#list sent messages by a user
     Request:
     GET http://localhost:8081/message/sent/Tushar
     Response:
-         [
-             {
+    [
+         {
                "sender": "Tushar",
                "receiver": "Patil",
                "subject": "Hi There",
                "body": "Looking forward to work with you"
-             }
-           ]
+         }
+    ]
