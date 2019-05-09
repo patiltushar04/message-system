@@ -1,11 +1,13 @@
 # message-system
 
 Application uses:
->>>Embedded Tomcat
->>>Embedded H2
->>>In-memory ActiveMQ
->>>Lombok
->>>Flyway
+1.Embedded Tomcat
+2.Embedded H2
+3.In-memory ActiveMQ
+4.Lombok
+5.Flyway
+6.WebMvcTest
+7.Swagger2
 
 
 >>>Use case 1#Send message
@@ -25,9 +27,9 @@ Application uses:
 
 >>>Use case 2#list incoming messages for a user
    Request:
-   GET http://localhost:8081/message/read/Patil
+   GET http://${server_location}/message/read/Patil
 
-   Response:
+    Response:
     [
          {
                "sender": "Tushar",
@@ -39,7 +41,7 @@ Application uses:
 
 >>>Use case 3#list sent messages by a user
     Request:
-    GET http://localhost:8081/message/sent/Tushar
+    GET http://${server_location}/message/sent/Tushar
 
     Response:
     [
@@ -53,7 +55,7 @@ Application uses:
 
 >>>Use case 4#Get message details by identified
     Request:
-    GET http://localhost:8081/message/details/1
+    GET http://${server_location}/message/details/1
 
     Response:
     [
